@@ -34,6 +34,7 @@ Primeiro, vamos analisar todo o código que vocês estão recebendo.
 # Exercício 2
 
 Agora vamos incrementar o formulário que trabalhamos hoje de manhã, que agora é o componente `NameForm`, com uma prática muito comum no desenvolvimento Front-end: **verificações**. 
+## **Antes disso, passe as props corretamente do componente `MainPage.js` para o componente `NameForm.js`, caso contrário, a aplicação não vai funcionar!**
 O seu trabalho agora é garantir que o usuário está inserindo corretamente as informações que você precisa. Para isso, siga os seguintes passos e requisitos:
 
 - A pessoa estudante só pode se inscrever na Labenu se for maior de idade
@@ -45,4 +46,23 @@ O seu trabalho agora é garantir que o usuário está inserindo corretamente as 
 Atenção: A lógica de avançar para a próxima etapa do formulário deve funcionar apenas SE todos os requisitos forem atendidos. Caso contrário, uma mensagem de `alert()` deve aparecer para o usuário indicando que ele não respondeu o formulário corretamente.
 
 # Exercício 3
+
+Agora que os requisitos da etapa anterior foram atendidos, você precisa criar os inputs do próximo formulário do zero. Além disso, você também precisa controlar todos esses inputs e verificar se os dados atendem os requisitos para finalizar a inscrição da pessoa estudante. 
+
+Para este formulário você vai precisar: 
+
+- Criar um input onde seja possível inserir a data de nascimento da pessoa.
+- Criar um input onde seja possível inserir o número de telefone da pessoa.
+- Criar um input do tipo dropdown onde a pessoa possa escolher um gênero entre as seguintes opções: **Homem cisgênero, Mulher cisgênero, Homem trans, Mulher trans, Pessoa não binária, Prefiro não dizer**.
+- Criar um input do tipo dropdown onde a pessoa possa escolher como se autodeclara: Negro, branco, pardo, amarelo, indígena ou prefiro não dizer.
+- Criar 2 inputs do tipo `radio` onde a pessoa possa escolher apenas uma opção entre as duas: Curso integral web fullstack ou Curso noturno web fullstack
+- Criar 2 inputs do tipo `checkbox` onde a pessoa confirma que: Tem ensino médio completo e Tem disponibilidade para participar das atividades.
+
+
+Quando tudo estiver finalizado, crie uma função de `onClick` no botão `Enviar dados` do componente `ConfirmationForm` que limpa os inputs e confirma para o usuário através de um `alert()` que a inscrição foi finalizada. Isso só pode acontecer se todos os campos forem preenchidos.
+
+Atenção: Só deve ser possível selecionar uma única opção nos inputs de drowdown para gênero e autodeclaração de cor.
+
+          
+           
  
