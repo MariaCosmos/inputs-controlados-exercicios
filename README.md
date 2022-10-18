@@ -33,20 +33,16 @@ Primeiro, vamos analisar todo o código que vocês estão recebendo.
 
 # Exercício 2
 
-Agora vamos incrementar o formulário que trabalhamos hoje de manhã
+Agora vamos incrementar o formulário que trabalhamos hoje de manhã, que agora é o componente `NameForm`, com uma prática muito comum no desenvolvimento Front-end: **verificações**. 
+O seu trabalho agora é garantir que o usuário está inserindo corretamente as informações que você precisa. Para isso, siga os seguintes passos e requisitos:
 
+- A pessoa estudante só pode se inscrever na Labenu se for maior de idade
+- O input de nome precisa ter no mínimo 10 caracteres e no máximo 30.
+- Verifique se o e-mail está no formato correto: usuario@usuario.com
+- Crie um novo input de confirmação de email. Caso os dois inputs estejam com conteúdo iguais, o usuário pode seguir pra próxima etapa. 
+- Todos os campos são obrigatórios.
 
+Atenção: A lógica de avançar para a próxima etapa do formulário deve funcionar apenas SE todos os requisitos forem atendidos. Caso contrário, uma mensagem de `alert()` deve aparecer para o usuário indicando que ele não respondeu o formulário corretamente.
 
 # Exercício 3
- Implemente a função de evoluir o Pokemon. Nessa função de onClick, você precisa modificar o estado criado no App.js para que, ao clicar, o Pokemon evolua pra sua próxima forma, se isso for possível.
-Perceba que alguns pokemons evoluem e outros não.
-Para isso, você precisa modificar os dados de dentro do objeto salvo no useState. Através de um spread operator, modifique apenas os dados necessários para que o pokemon evolua: 
-
-- Cor
-- Imagem
-- Nome
-- Tipo
-- Evoluido (perceba que isso é um boolean, se ele já estiver evoluído, deve ser true; caso contrário, false.)
-- Peso
-
-Depois disso, crie novos cards com pokemons diferentes para praticar :) 
+ 
